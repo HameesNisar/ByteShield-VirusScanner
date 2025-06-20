@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/favicon.ico"/>
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>ByteShield</title>
+</head>
+<body>
+    <!-- Letter Glitch Background Effect -->
+    <div class="glitch-background">
+        <canvas id="glitchCanvas"></canvas>
+        <div class="glitch-vignette"></div>
+    </div>
+
+    <!-- Split Text Header with Logo -->
+    <div class="split-text-header">
+        <div class="logo-container">
+            <svg class="byteshield-logo" viewBox="0 0 40 40" width="40" height="40">
+                <defs>
+                    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#5b21b6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M20 2 L35 10 L35 25 Q35 32 20 38 Q5 32 5 25 L5 10 Z" 
+                      fill="url(#shieldGradient)" 
+                      stroke="#00ff88" 
+                      stroke-width="1"/>
+                <path d="M20 8 L28 12 L28 22 Q28 26 20 30 Q12 26 12 22 L12 12 Z" 
+                      fill="none" 
+                      stroke="#00ff88" 
+                      stroke-width="1.5"/>
+                <circle cx="20" cy="20" r="3" fill="#00ff88"/>
+            </svg>
+        </div>
+        <h1 class="split-text" data-text="ByteShield">ByteShield</h1>
+    </div>
+
+    <div class="container">
+        <!-- Upload Area -->
+        <div class="upload-area" id="uploadArea">
+            <p>Drag & drop your file here or</p>
+            <label for="fileInput" class="file-input">Choose File</label>
+            <input type="file" id="fileInput">
+        </div>
+
+        <!-- File Info -->
+        <div class="file-info" id="fileInfo">No file selected</div>
+
+        <!-- Scan Button -->
+        <button class="scan-btn" id="scanBtn" disabled>Scan File</button>
+
+        <!-- Results -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
