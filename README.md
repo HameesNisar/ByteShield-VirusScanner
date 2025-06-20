@@ -2,15 +2,17 @@
 
 ByteShield is a visually enhanced web application that allows users to scan files for malware using the VirusTotal API. It features animated cybersecurity-inspired effects and a simple drag-and-drop interface.
 
+![Screenshot](https://github.com/user-attachments/assets/4045720c-d34a-4f67-bd0c-4bf1417b5aa5)
+
 ## 🔮 Features
 
-- 🎨 **Glitch Background Animation** (Canvas-based cyberpunk matrix effect)
-- 💥 **Split Text Heading Animation**
-- 📁 **Drag & Drop File Upload**
-- 🔍 **VirusTotal Integration** for malware scanning
-- ⚠️ **Threat Detection Display** with clean or infected results
-- ⏱️ **Timeout Handling** and error feedback
-- 🧠 **Smooth UX and Validation**
+- 🎨 **Glitch Background Animation** - Canvas-based cyberpunk matrix effect
+- 💥 **Split Text Heading Animation** - Stylish animated text displays
+- 📁 **Drag & Drop File Upload** - Intuitive file selection interface
+- 🔍 **VirusTotal Integration** - Multi-engine malware scanning
+- ⚠️ **Threat Detection Display** - Clear visual results for clean or infected files
+- ⏱️ **Timeout Handling** - Robust error feedback and validation
+- 🧠 **Smooth UX** - Polished user experience with validation
 
 ## 🚀 Live Demo
 
@@ -18,72 +20,130 @@ ByteShield is a visually enhanced web application that allows users to scan file
 
 ## 🛠️ How to Use
 
-1. Upload a file by dragging it into the area or clicking to select.
-2. Click **Scan File** to analyze it using VirusTotal.
-3. See clean/threat results visually displayed.
+1. **Upload a file** by dragging it into the designated area or clicking to select
+2. **Click "Scan File"** to analyze it using VirusTotal's API
+3. **View results** - Clean or threat status displayed visually
 
 ## 📁 Supported File Types
 
-Includes common formats:
-- `.exe`, `.pdf`, `.zip`, `.txt`, `.jpg`, `.png`, `.gif`, `.doc`, `.xls`, etc.
+**Common formats supported:**
+- **Executables:** `.exe`, `.msi`, `.deb`, `.rpm`
+- **Documents:** `.pdf`, `.doc`, `.docx`, `.xls`, `.xlsx`, `.ppt`
+- **Archives:** `.zip`, `.rar`, `.7z`, `.tar`
+- **Media:** `.jpg`, `.png`, `.gif`, `.mp4`, `.avi`
+- **Text:** `.txt`, `.csv`, `.json`, `.xml`
 
-Max file size: **32MB**
+**Maximum file size:** 32MB
 
-## 📁 File Structure Overview
+## 🏗️ Project Structure
 
+```
 byte-shield/
 ├── static/
 │   ├── css/
+│   │   └── styles.css
 │   └── js/
+│       └── scripts.js
 ├── templates/
 │   └── index.html
 ├── app.py
 ├── .env
-└── requirements.txt
+├── requirements.txt
+└── README.md
+```
 
 ## 🧪 Tech Stack
 
-- HTML5, CSS3, JavaScript (Vanilla)
-- Canvas API
-- VirusTotal Public API
-- Animations via custom JS and CSS
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript
+- **Backend:** Python Flask
+- **API:** VirusTotal Public API
+- **Graphics:** Canvas API for animations
+- **Effects:** Custom CSS animations and JavaScript
 
-## 🔒 Security
+## 🔧 Installation & Setup
 
-- Only client-side file validation; no file is stored on the server.
-- VirusTotal scan ensures multi-engine malware analysis.
+1. **Clone the repository:**
+```bash
+git clone https://github.com/HameesNisar/ByteShield.git
+cd ByteShield
+```
 
-## 🔒 Security Notes
-- No files are saved to the server.
-- All scans are securely done via VirusTotal API.
-- Client-side validation handles size/type before upload.
+2. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Set up environment variables:**
+Create a `.env` file and add your VirusTotal API key:
+```
+VIRUSTOTAL_API_KEY=your_api_key_here
+```
+
+4. **Run the application:**
+```bash
+python app.py
+```
+
+5. **Open your browser:**
+Navigate to `http://localhost:5000`
+
+## 🔒 Security Features
+
+- **Client-side validation** - File type and size checking before upload
+- **No server storage** - Files are not saved to the server
+- **Multi-engine scanning** - VirusTotal uses 70+ antivirus engines
+- **Secure API integration** - Encrypted communication with VirusTotal
 
 ## 🎨 Visual Effects
 
-- **Letter Glitch Matrix** (`<canvas>`) background
-- **Split Text Animation** for stylish headings
-- **Animated scan button & loaders**
+- **Matrix Glitch Background** - Dynamic canvas-based animation
+- **Split Text Animation** - Eye-catching heading effects
+- **Loading Animations** - Smooth scan progress indicators
+- **Cyberpunk Aesthetic** - Dark theme with neon accents
 
-## 📸 Screenshots
+## 📋 Requirements
 
-*![Screenshot (2)](https://github.com/user-attachments/assets/4045720c-d34a-4f67-bd0c-4bf1417b5aa5)*
+```txt
+Flask==2.3.3
+python-dotenv==1.0.0
+requests==2.31.0
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Hamees Nisar**
+- Cybersecurity Student & Enthusiast
+- Future Security Analyst
+- GitHub: [@HameesNisar](https://github.com/HameesNisar)
+
+## 🙏 Acknowledgments
+
+- 🔬 Malware detection powered by [VirusTotal](https://www.virustotal.com/)
+- 🎨 Visual effects handcrafted with pure JavaScript
+- 🧠 Inspired by matrix glitch vibes and hacker aesthetics
 
 ---
 
-## 🙏 Credits
-- ✨ Developed entirely by Hamees Nisar
-- 🎨 Visual Effects handcrafted with pure JavaScript
-- 🔬 Malware detection powered by VirusTotal
-- 🧠 Inspired by matrix glitch vibes and hacker aesthetics
+<div align="center">
 
+**© 2025 ByteShield**
 
-## 🧾 License
-- This project is licensed under the MIT License.
+*Made with logic, caffeine, and chaos. Stay secure.* 🛡️💻
 
-## 💀 Author
-- Hamees Nisar – Cybersecurity student, enthusiast, and future analyst
-GitHub: **@HameesNisar**
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-2.3+-red.svg)](https://flask.palletsprojects.com/)
 
-© 2025 ByteShield. Made with logic, caffeine, and chaos. Stay secure. 🧠💥
-
-
+</div>
