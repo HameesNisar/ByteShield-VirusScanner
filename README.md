@@ -45,3 +45,9 @@ python app.py
 <h2>📜 License</h2>
 <p>Free to use. Educational purposes only.</p>
 
+<h2>🙌 Credits</h2>
+
+Developed by **Hamees Nisar**.  
+ByteShield was crafted as a lightweight Flask-based virus scanning app using the VirusTotal API — to demonstrate security awareness and ethical file analysis.
+
+
