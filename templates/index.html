@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/favicon.ico"/>
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>ByteShield</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>⚔️ ByteShield</h1>
+        
+        <!-- Upload Area -->
+        <div class="upload-area" id="uploadArea">
+            <p>Drag & drop your file here or</p>
+            <label for="fileInput" class="file-input">Choose File</label>
+            <input type="file" id="fileInput">
+        </div>
+
+        <!-- File Info -->
+        <div class="file-info" id="fileInfo">No file selected</div>
+
+        <!-- Scan Button -->
+        <button class="scan-btn" id="scanBtn" disabled>Scan File</button>
+
+        <!-- Results -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
