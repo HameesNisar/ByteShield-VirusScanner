@@ -1,5 +1,3 @@
-## 🖥️ ByteShield
-
 <h1 align="center">🛡️ ByteShield - Virus Scanner Web App</h1>
 
 <p align="center">
