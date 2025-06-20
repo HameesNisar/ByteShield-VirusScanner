@@ -1,53 +1,89 @@
-<h1 align="center">🛡️ ByteShield - Virus Scanner Web App</h1>
+# 🛡️ ByteShield – File Scanner with VirusTotal API
 
-<p align="center">
-  <em>A lightweight web-based antivirus scanner using Flask and VirusTotal API.</em>
-</p>
+ByteShield is a visually enhanced web application that allows users to scan files for malware using the VirusTotal API. It features animated cybersecurity-inspired effects and a simple drag-and-drop interface.
 
-<hr>
+## 🔮 Features
 
-<h2>🚀 About the Project</h2>
-<p><strong>ByteShield</strong> is a simple, secure web application that allows users to scan uploaded files for viruses or malware using the VirusTotal public API. Built using <strong>Python</strong>, <strong>Flask</strong>, and <strong>HTML/CSS</strong>, it's perfect for cybersecurity projects or demos.</p>
+- 🎨 **Glitch Background Animation** (Canvas-based cyberpunk matrix effect)
+- 💥 **Split Text Heading Animation**
+- 📁 **Drag & Drop File Upload**
+- 🔍 **VirusTotal Integration** for malware scanning
+- ⚠️ **Threat Detection Display** with clean or infected results
+- ⏱️ **Timeout Handling** and error feedback
+- 🧠 **Smooth UX and Validation**
 
-<h2>🛠️ Features</h2>
-<ul>
-  <li>📁 Upload and scan files via VirusTotal</li>
-  <li>🧪 Real-time detection of malicious/suspicious files</li>
-  <li>🔐 API key stored securely in <code>.env</code></li>
-  <li>🌐 Beginner-friendly codebase using Flask</li>
-</ul>
+## 🚀 Live Demo
 
-<h2>📂 Project Structure</h2>
-<pre>
-ByteShield-VirusScanner/
-├── app.py
+[👉 Try it live](https://your-deployed-url-here.com)
+
+## 🛠️ How to Use
+
+1. Upload a file by dragging it into the area or clicking to select.
+2. Click **Scan File** to analyze it using VirusTotal.
+3. See clean/threat results visually displayed.
+
+## 📁 Supported File Types
+
+Includes common formats:
+- `.exe`, `.pdf`, `.zip`, `.txt`, `.jpg`, `.png`, `.gif`, `.doc`, `.xls`, etc.
+
+Max file size: **32MB**
+
+## 📁 File Structure Overview
+
+byte-shield/
+├── static/
+│   ├── css/
+│   └── js/
 ├── templates/
 │   └── index.html
-├── static/
-│   └── (Optional CSS)
-├── requirements.txt
-├── .gitignore
-└── README.md
-</pre>
+├── app.py
+├── .env
+└── requirements.txt
 
-<h2>🔐 API Key Setup</h2>
-<ol>
-  <li>Get a free API key from <a href="https://www.virustotal.com/">VirusTotal</a></li>
-  <li>Create a file called <code>.env</code> in the root folder</li>
-  <li>Inside it, add:<br><code>VIRUSTOTAL_API_KEY=your_virustotal_api_key_here</code></li>
-</ol>
+## 🧪 Tech Stack
 
-<h2>💻 How to Run</h2>
-<pre><code>pip install -r requirements.txt
-python app.py
-</code></pre>
+- HTML5, CSS3, JavaScript (Vanilla)
+- Canvas API
+- VirusTotal Public API
+- Animations via custom JS and CSS
 
-<h2>📜 License</h2>
-<p>Free to use. Educational purposes only.</p>
+## 🔒 Security
 
-<h2>🙌 Credits</h2>
+- Only client-side file validation; no file is stored on the server.
+- VirusTotal scan ensures multi-engine malware analysis.
 
-Developed by **Hamees Nisar**.  
-ByteShield was crafted as a lightweight Flask-based virus scanning app using the VirusTotal API — to demonstrate security awareness and ethical file analysis.
+## 🔒 Security Notes
+- No files are saved to the server.
+- All scans are securely done via VirusTotal API.
+- Client-side validation handles size/type before upload.
+
+## 🎨 Visual Effects
+
+- **Letter Glitch Matrix** (`<canvas>`) background
+- **Split Text Animation** for stylish headings
+- **Animated scan button & loaders**
+
+## 📸 Screenshots
+
+*![Screenshot (2)](https://github.com/user-attachments/assets/4045720c-d34a-4f67-bd0c-4bf1417b5aa5)*
+
+---
+
+## 🙏 Credits
+- ✨ Developed entirely by Hamees Nisar
+- 🎨 Visual Effects handcrafted with pure JavaScript
+- 🔬 Malware detection powered by VirusTotal
+- 🧠 Inspired by matrix glitch vibes and hacker aesthetics
+
+
+## 🧾 License
+- This project is licensed under the MIT License.
+
+## 💀 Author
+- Hamees Nisar – Cybersecurity student, enthusiast, and future analyst
+GitHub: **@HameesNisar**
+
+© 2025 ByteShield. Made with logic, caffeine, and chaos. Stay secure. 🧠💥
 
 
