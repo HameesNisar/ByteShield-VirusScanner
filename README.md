@@ -40,10 +40,8 @@ ByteShield is a visually enhanced web application that allows users to scan file
 ```
 byte-shield/
 ├── static/
-│   ├── css/
-│   │   └── styles.css
-│   └── js/
-│       └── scripts.js
+│   ├── styles.css  
+│   └── script.js        
 ├── templates/
 │   └── index.html
 ├── app.py
@@ -117,7 +115,7 @@ This project is licensed under the MIT License.
 
 **Hamees Nisar**
 - Cybersecurity Student & Enthusiast
-- Future Security Analyst
+- Future Security Architect
 - GitHub: [@HameesNisar](https://github.com/HameesNisar)
 
 ## 🙏 Acknowledgments
